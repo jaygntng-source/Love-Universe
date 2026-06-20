@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Meta Tags & SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OUR LITTLE UNIVERSE — A Digital Love Story Between Fikri & Zahra">
+    <meta property="og:title" content="OUR LITTLE UNIVERSE — Fikri & Zahra">
+    <meta property="og:description" content="A Digital Love Story Between Fikri & Zahra">
+    <meta name="theme-color" content="#f5a6b8">
+    
+    <title>OUR LITTLE UNIVERSE — Fikri & Zahra</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+</head>
+<body>
+
+    <!-- LOADING SCREEN -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <h1>OUR LITTLE UNIVERSE</h1>
+            <p>Creating...</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="loading-particles">
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="custom-cursor"></div>
+
+    <!-- MAIN WRAPPER -->
+    <div id="app">
+
+        <!-- OPENING CINEMATIC -->
+        <section id="opening" class="cinematic-section active">
+            <div class="opening-bg">
+                <div class="floating-hearts"></div>
+                <div class="soft-particles"></div>
+            </div>
+            <div class="opening-content glass-effect">
+                <h1 class="opening-title">OUR LITTLE UNIVERSE</h1>
+                <p class="opening-subtitle">Fikri & Zahra</p>
+                <p class="opening-date">14 January 2025 — Forever Story</p>
+                <button id="start-journey" class="premium-btn glass-effect">
+                    Start Our Journey
+                </button>
+            </div>
+        </section>
+
+        <!-- RELATIONSHIP COUNTER -->
+        <section id="counter" class="cinematic-section">
+            <div class="counter-container glass-effect">
+                <h2>Fikri & Zahra telah berjalan bersama selama...</h2>
+                <div class="counter-display">
+                    <div class="counter-item">
+                        <span id="days">0</span>
+                        <label>Hari</label>
+                    </div>
+                    <div class="counter-item">
+                        <span id="months">0</span>
+                        <label>Bulan</label>
+                    </div>
+                    <div class="counter-item">
+                        <span id="years">0</span>
+                        <label>Tahun</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT STARTED -->
+        <section id="how-it-started" class="cinematic-section">
+            <div class="story-container">
+                <h2 class="section-title">How It Started</h2>
+                <div class="story-content">
+                    <p class="story-text reveal-text">"Kadang sebuah cerita besar dimulai dari hal kecil yang tidak pernah direncanakan."</p>
+                    <p class="story-text reveal-text">"Awalnya hanya sebuah pertemuan sederhana di dunia game Mobile Legends."</p>
+                    <p class="story-text reveal-text">"Dia mengetik sesuatu yang sederhana: <span class="highlight">-1 lovers</span>"</p>
+                    <p class="story-text reveal-text">"Tanpa sadar, sebuah respon kecil menjadi awal dari perjalanan yang panjang."</p>
+                    <p class="story-text reveal-text">"Dari sebuah game, muncul sebuah cerita. Dari sebuah percakapan, tumbuh sebuah rasa. Dan sampai sekarang, kita masih berjalan bersama."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIMELINE -->
+        <section id="timeline" class="cinematic-section">
+            <h2 class="section-title">Timeline</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-effect">
+                        <h3>14 Januari 2025</h3>
+                        <h4>The Beginning</h4>
+                        <p>"Pertemuan kecil yang mengubah semuanya."</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-effect">
+                        <h3>2025</h3>
+                        <h4>Getting Closer</h4>
+                        <p>"Mengenal satu sama lain lebih dalam."</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-effect">
+                        <h3>2026</h3>
+                        <h4>Still Here</h4>
+                        <p>"Dua orang, satu perjalanan."</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-effect">
+                        <h3>Future</h3>
+                        <h4>Our First Meeting</h4>
+                        <p>"Menunggu hari dimana cerita virtual ini menjadi nyata."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MEMORY GALLERY -->
+        <section id="memory-gallery" class="cinematic-section">
+            <h2 class="section-title">Memory Gallery</h2>
+            <div class="gallery-grid" id="memory-grid">
+                <!-- Dynamic content via JavaScript -->
+            </div>
+        </section>
+
+        <!-- LETTER SECTION -->
+        <section id="letter" class="cinematic-section">
+            <div class="letter-container glass-effect">
+                <h2 class="section-title">"A Letter For You"</h2>
+                <div class="letter-content">
+                    <p>Zahra,</p>
+                    <p>Tidak semua cerita indah dimulai dengan sesuatu yang besar.</p>
+                    <p>Kadang hanya dari satu pesan kecil, satu pertemuan sederhana, dan satu keputusan untuk tetap bertahan.</p>
+                    <p>Terima kasih sudah menjadi bagian dari perjalanan ini.</p>
+                    <p>Semoga suatu hari nanti, jarak yang sekarang hanya sebuah layar, berubah menjadi pertemuan yang benar-benar nyata.</p>
+                    <p class="letter-signature">— Fikri</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECRET BOX -->
+        <section id="secret-box" class="cinematic-section">
+            <div class="secret-container">
+                <div class="secret-box glass-effect" id="secretBox">
+                    <div class="secret-lid"></div>
+                    <div class="secret-body">
+                        <p>"Jika kamu membaca ini... berarti kamu menemukan bagian kecil yang tersembunyi dari cerita kita. Terima kasih sudah tetap ada. Semoga cerita ini terus bertambah panjang."</p>
+                    </div>
+                </div>
+                <button id="openSecret" class="premium-btn">Open Secret Box</button>
+            </div>
+        </section>
+
+        <!-- GIFT CARD -->
+        <section id="gift" class="cinematic-section">
+            <div class="gift-container glass-effect">
+                <h2>"A Little Gift For You"</h2>
+                <p>"Hadiah kecil ini mungkin sederhana, tapi dibuat dengan banyak cerita di dalamnya."</p>
+                <button id="openGift" class="premium-btn">Open Gift ✨</button>
+                <div id="giftReveal" class="gift-reveal hidden">
+                    <div class="gift-content">
+                        <p>Terima kasih telah menjadi bagian dari cerita ini.</p>
+                        <p>❤️</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAVORITES -->
+        <section id="favorites" class="cinematic-section">
+            <h2 class="section-title">OUR LITTLE FAVORITES</h2>
+            <div class="favorites-container">
+                <div class="favorite-column">
+                    <h3>FIKRI'S FAVORITES</h3>
+                    <div class="food-grid" id="fikriFood">
+                        <!-- Dynamic content -->
+                    </div>
+                </div>
+                <div class="favorite-column">
+                    <h3>ZAHRA'S FAVORITES</h3>
+                    <div class="food-grid" id="zahraFood">
+                        <!-- Dynamic content -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOMEDAY WE MEET -->
+        <section id="someday" class="cinematic-section">
+            <div class="someday-container glass-effect">
+                <h2>"Someday, We Meet"</h2>
+                <p>"Suatu hari nanti, cerita yang selama ini hanya melalui layar, akan punya tempat dan waktu nyata."</p>
+                <div class="hope-list">
+                    <span>pertama kali bertemu</span>
+                    <span>ngobrol tanpa layar</span>
+                    <span>berjalan bersama</span>
+                    <span>mencoba makanan favorit</span>
+                    <span>membuat kenangan baru</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL ENDING -->
+        <section id="final" class="cinematic-section">
+            <div class="final-container">
+                <div class="heart-3d" id="heart3D">
+                    <div class="heart-particles"></div>
+                </div>
+                <div class="final-text">
+                    <h2>Fikri 🤍 Zahra</h2>
+                    <p>To be continued...</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- MUSIC PLAYER -->
+    <div id="musicPlayer" class="music-player glass-effect">
+        <div class="player-controls">
+            <button id="playBtn">▶</button>
+            <div class="player-info">
+                <span class="song-title">Our Little Universe</span>
+                <div class="progress-container">
+                    <div class="progress-bar" id="musicProgress">
+                        <div class="progress-fill" id="musicProgressFill"></div>
+                    </div>
+                </div>
+            </div>
+            <button id="volumeBtn">🔊</button>
+        </div>
+    </div>
+
+    <!-- CINEMA MODE TOGGLE -->
+    <button id="cinemaToggle" class="cinema-toggle premium-btn">🎬 Cinema Mode</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
