@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="OUR LITTLE UNIVERSE — Fikri & Zahra" />
+    <meta name="theme-color" content="#f5a6b8" />
+    <title>OUR LITTLE UNIVERSE — Fikri & Zahra</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+</head>
+<body>
+
+<!-- ===== LOADING SCREEN ===== -->
+<div id="loading">
+    <h1>OUR LITTLE UNIVERSE</h1>
+    <p>Creating...</p>
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+</div>
+
+<!-- ===== CUSTOM CURSOR ===== -->
+<div class="custom-cursor" id="customCursor"></div>
+
+<!-- ===== MUSIC PLAYER ===== -->
+<div class="music-player" id="musicPlayer">
+    <button id="playBtn" class="music-btn">▶</button>
+    <div class="player-info">
+        <span class="song-title">Our Little Universe</span>
+        <div class="player-progress">
+            <div class="player-progress-fill" id="musicProgress"></div>
+        </div>
+    </div>
+    <button id="volumeBtn" class="music-btn">🔊</button>
+</div>
+
+<!-- ===== CINEMA TOGGLE ===== -->
+<button id="cinemaToggle" class="cinema-btn">🎬 Cinema</button>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">✕</span>
+    <img src="" alt="" id="lightboxImage" />
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main>
+
+    <!-- OPENING -->
+    <section id="opening">
+        <div class="opening-content">
+            <h1>OUR LITTLE UNIVERSE</h1>
+            <h2>Fikri &amp; Zahra</h2>
+            <p>14 January 2025 — Forever Story</p>
+            <button class="btn-primary" id="startBtn">Start Our Journey</button>
+        </div>
+    </section>
+
+    <!-- COUNTER -->
+    <section id="counter" class="section">
+        <div class="container glass">
+            <h2>Fikri &amp; Zahra telah berjalan bersama selama...</h2>
+            <div class="counter-grid">
+                <div><span id="days">0</span><label>Hari</label></div>
+                <div><span id="months">0</span><label>Bulan</label></div>
+                <div><span id="years">0</span><label>Tahun</label></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT STARTED -->
+    <section id="story" class="section">
+        <div class="container">
+            <h2 class="section-title">How It Started</h2>
+            <div class="story-text">
+                <p>"Kadang sebuah cerita besar dimulai dari hal kecil yang tidak pernah direncanakan."</p>
+                <p>"Awalnya hanya sebuah pertemuan sederhana di dunia game Mobile Legends."</p>
+                <p>"Dia mengetik sesuatu yang sederhana: <span class="highlight">-1 lovers</span>"</p>
+                <p>"Tanpa sadar, sebuah respon kecil menjadi awal dari perjalanan yang panjang."</p>
+                <p>"Dari sebuah game, muncul sebuah cerita. Dari sebuah percakapan, tumbuh sebuah rasa. Dan sampai sekarang, kita masih berjalan bersama."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline" class="section">
+        <h2 class="section-title">Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card glass">
+                    <span class="date">14 Januari 2025</span>
+                    <h3>The Beginning</h3>
+                    <p>"Pertemuan kecil yang mengubah semuanya."</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card glass">
+                    <span class="date">2025</span>
+                    <h3>Getting Closer</h3>
+                    <p>"Mengenal satu sama lain lebih dalam."</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card glass">
+                    <span class="date">2026</span>
+                    <h3>Still Here</h3>
+                    <p>"Dua orang, satu perjalanan."</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card glass">
+                    <span class="date">Future</span>
+                    <h3>Our First Meeting</h3>
+                    <p>"Menunggu hari dimana cerita virtual ini menjadi nyata."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+        <h2 class="section-title">Memory Gallery</h2>
+        <div class="gallery-grid" id="memoryGrid"></div>
+    </section>
+
+    <!-- LETTER -->
+    <section id="letter" class="section">
+        <div class="container glass letter-box">
+            <h2 class="section-title">"A Letter For You"</h2>
+            <div class="letter-content">
+                <p>Zahra,</p>
+                <p>Tidak semua cerita indah dimulai dengan sesuatu yang besar.</p>
+                <p>Kadang hanya dari satu pesan kecil, satu pertemuan sederhana, dan satu keputusan untuk tetap bertahan.</p>
+                <p>Terima kasih sudah menjadi bagian dari perjalanan ini.</p>
+                <p>Semoga suatu hari nanti, jarak yang sekarang hanya sebuah layar, berubah menjadi pertemuan yang benar-benar nyata.</p>
+                <p class="letter-sign">— Fikri</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECRET BOX -->
+    <section id="secret" class="section">
+        <div class="secret-box glass" id="secretBox">
+            <p class="secret-hidden">🔒 Klik untuk membuka</p>
+            <p class="secret-reveal">"Jika kamu membaca ini... berarti kamu menemukan bagian kecil yang tersembunyi dari cerita kita. Terima kasih sudah tetap ada. Semoga cerita ini terus bertambah panjang."</p>
+        </div>
+    </section>
+
+    <!-- GIFT -->
+    <section id="gift" class="section">
+        <div class="container glass gift-box">
+            <h2>"A Little Gift For You"</h2>
+            <p>"Hadiah kecil ini mungkin sederhana, tapi dibuat dengan banyak cerita di dalamnya."</p>
+            <button class="btn-primary" id="giftBtn">Open Gift ✨</button>
+            <div class="gift-reveal hidden" id="giftReveal">
+                <p>❤️ Terima kasih telah menjadi bagian dari cerita ini. ❤️</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAVORITES -->
+    <section id="favorites" class="section">
+        <h2 class="section-title">Our Little Favorites</h2>
+        <div class="favorites-grid">
+            <div>
+                <h3>Fikri's Favorites</h3>
+                <div class="food-grid" id="fikriFood"></div>
+            </div>
+            <div>
+                <h3>Zahra's Favorites</h3>
+                <div class="food-grid" id="zahraFood"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOMEDAY -->
+    <section id="someday" class="section">
+        <div class="container glass someday-box">
+            <h2>"Someday, We Meet"</h2>
+            <p>"Suatu hari nanti, cerita yang selama ini hanya melalui layar, akan punya tempat dan waktu nyata."</p>
+            <div class="hope-tags">
+                <span>pertama kali bertemu</span>
+                <span>ngobrol tanpa layar</span>
+                <span>berjalan bersama</span>
+                <span>mencoba makanan favorit</span>
+                <span>membuat kenangan baru</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL -->
+    <section id="final" class="section">
+        <div class="final-content">
+            <div class="heart-3d">❤️</div>
+            <h2>Fikri 🤍 Zahra</h2>
+            <p>To be continued...</p>
+        </div>
+    </section>
+
+</main>
+
+<!-- ===== SCRIPTS ===== -->
+<script src="script.js"></script>
+</body>
+</html>
